@@ -1,17 +1,28 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { AbstractControl, FormBuilder, ReactiveFormsModule, ValidatorFn, Validators } from '@angular/forms';
+import { FirstKeyPipe } from '../../shared/pipes/first-key.pipe';
+import { AuthService } from '../../shared/services/auth.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-registration',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [
+    ReactiveFormsModule, 
+    CommonModule, 
+    FirstKeyPipe,
+  ],
   templateUrl: './registration.component.html',
   styles: ``
 })
 
 export class RegistrationComponent {
-  constructor(public formBuilder: FormBuilder) {}
+  constructor(
+    public formBuilder: FormBuilder, 
+    private service: AuthService,
+    private toastr: ToastrService
+  ) {}
   isSubmitted:boolean = false;
 
   passWordMatchValid: ValidatorFn = (control:AbstractControl):null => {
@@ -28,6 +39,7 @@ export class RegistrationComponent {
 
   form = this.formBuilder.group({
     fullName : ['', Validators.required],
+    userName : ['', Validators.required],
     email : ['', [Validators.required, Validators.email]],
     password : ['', [Validators.required, Validators.minLength(3)]],
     confirmPassword : [''],
@@ -35,7 +47,21 @@ export class RegistrationComponent {
 
   onSubmit(){
     this.isSubmitted = true;
-    console.log(this.form.value);
+
+    if(this.form.valid){
+      this.service.createUser(this.form.value).subscribe({
+        next:(res:any)=>{
+          if(res.succeeded){
+            this.form.reset();
+            this.isSubmitted = false;
+            this.toastr.success('New User Created..!', 'Registration Successfull')
+          }
+          console.log('response', res);
+        },
+        error:err=>console.log('error', err)
+      })
+
+    }
   }
 
   hasDisplayableError(controlName: string):Boolean{
