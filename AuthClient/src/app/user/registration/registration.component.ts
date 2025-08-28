@@ -45,27 +45,59 @@ export class RegistrationComponent {
     confirmPassword : [''],
   },{validators:this.passWordMatchValid})
 
-  onSubmit(){
+  onSubmit() {
     this.isSubmitted = true;
 
-    if(this.form.valid){
+    if (this.form.valid) {
       this.service.createUser(this.form.value).subscribe({
-        next:(res:any)=>{
-          if(res.succeeded){
+        next: (res: any) => {
+          if (res.succeeded) {
             this.form.reset();
             this.isSubmitted = false;
-            this.toastr.success('New User Created..!', 'Registration Successfull')
+            this.toastr.success(
+              'New User Created..!',
+              'Registration Successfull'
+            );
           }
-          console.log('response', res);
         },
-        error:err=>console.log('error', err)
-      })
+        error: (err) => {
+          if (err.error.errors)
+            err.error.errors.forEach((x: any) => {
+              switch (x.code) {
+                case 'DuplicateUserName':
+                  this.toastr.error(
+                    'User Name is already taken..!',
+                    'Registration Failed'
+                  );
+                  break;
 
+                case 'DuplicateEmail':
+                  this.toastr.error(
+                    'Email is already taken..!',
+                    'Registration Failed'
+                  );
+                  break;
+
+                default:
+                  this.toastr.error(
+                    'Contact the developer',
+                    'Registration Failed'
+                  );
+                  console.log(x);
+                  break;
+              }
+            });
+          else console.log('error', err);
+        },
+      });
     }
   }
 
-  hasDisplayableError(controlName: string):Boolean{
+  hasDisplayableError(controlName: string): Boolean {
     const control = this.form.get(controlName);
-    return Boolean(control?.invalid) && (this.isSubmitted || Boolean(control?.touched))
+    return (
+      Boolean(control?.invalid) &&
+      (this.isSubmitted || Boolean(control?.touched) || Boolean(control?.dirty))
+    );
   }
 }
