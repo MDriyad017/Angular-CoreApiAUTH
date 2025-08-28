@@ -6,8 +6,7 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
-builder.Services.AddControllers();
+builder.Services.AddControllers(); // This will automatically discover your controllers
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -42,34 +41,10 @@ app.UseCors(opt => opt.WithOrigins("http://localhost:4200").AllowAnyMethod().All
 
 app.UseAuthorization();
 
-app.MapControllers();
+app.MapControllers(); // This maps all your controllers automatically
 
 app
     .MapGroup("/api")
     .MapIdentityApi<AppUser>();
 
-app.MapPost("/api/signup", async (UserManager<AppUser> userManager, [FromBody] UserRegistrationModel userRegistrationModel) =>
-{
-    AppUser user = new AppUser()
-    {
-        Email = userRegistrationModel.Email,
-        FullName = userRegistrationModel.FullName,
-        UserName = userRegistrationModel.UserName
-    };
-    var result = await userManager.CreateAsync(user, userRegistrationModel.Password);
-
-    if (result.Succeeded)
-        return Results.Ok(result);
-    else
-        return Results.BadRequest(result);
-});
-
 app.Run();
-
-public class UserRegistrationModel
-{
-    public string Email { get; set; }
-    public string Password { get; set; }
-    public string FullName { get; set; }
-    public string UserName { get; set; }
-}
