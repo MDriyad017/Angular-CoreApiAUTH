@@ -1,14 +1,10 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
-import { RouterLink } from "@angular/router";
+import { Router, RouterLink } from "@angular/router";
 import { CommonModule } from '@angular/common';
-import {
-  trigger,
-  transition,
-  style,
-  animate,
-  keyframes
-} from '@angular/animations';
+import {trigger, transition, style, animate, keyframes} from '@angular/animations';
+import { AuthService } from '../../shared/services/auth.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-login',
@@ -43,7 +39,12 @@ import {
   ]
 })
 export class LoginComponent {
-  constructor(public formBuilder: FormBuilder) {}
+  constructor(
+    public formBuilder: FormBuilder,
+    private service: AuthService,
+    private toastr: ToastrService,
+    private router: Router
+  ) {}
 
   isSubmitted: boolean = false;
 
@@ -62,8 +63,20 @@ export class LoginComponent {
 
   onSubmit() {
     this.isSubmitted = true;
-    if (this.form.invalid) {
-      return;
+
+    if (this.form.valid) {
+      this.service.signin(this.form.value).subscribe({
+        next: (res: any) => {
+          localStorage.setItem('token', res.token);
+          this.router.navigateByUrl('/dashboard')
+        },
+        error:err => {
+          if(err.status == 400 || err.status == 500)
+            this.toastr.error('Incorrect email or password..!', 'Login Failed')
+          else
+            console.log('error during login:\n', err);
+        }
+      })
     }
     console.log(this.form.value);
   }

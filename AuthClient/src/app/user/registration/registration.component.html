@@ -6,7 +6,7 @@
     <a routerLink="/login" class="text-decoration-none fw-medium text-success d-inline-block">Login</a>
   </div>
 
-  <form [formGroup]="form" (ngSubmit)="onSubmit()" [@shake]="form.invalid && isSubmitted ? 'in' : null">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
     <div class="mb-3">
       <input class="form-control bg-body-secondary" placeholder="Full Name" formControlName="fullName">
       <div class="error-feedback" *ngIf="hasDisplayableError('fullName') && form.controls.fullName.hasError('required')">Please enter your Full Name</div>

@@ -1,7 +1,7 @@
 <div class="auth-container" @fadeInUp>
   <h2 class="text-success text-center mb-4">Sign In</h2>
 
-  <form [formGroup]="form" (ngSubmit)="onSubmit()" [@shake]="form.invalid && isSubmitted ? 'in' : null">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
     <div class="mb-3">
       <input
         class="form-control bg-body-secondary"
@@ -38,11 +38,6 @@
 
   <div class="mt-4 text-center">
     If you don't have an account?
-    <a
-      routerLink="/signup"
-      class="text-decoration-none fw-medium text-success d-inline-block"
-    >
-      Sign Up
-    </a>
+    <a routerLink="/signup" class="text-decoration-none fw-medium text-success d-inline-block">Sign Up</a>
   </div>
 </div>
