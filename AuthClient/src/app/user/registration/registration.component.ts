@@ -1,28 +1,47 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { AbstractControl, FormBuilder, ReactiveFormsModule, ValidatorFn, Validators } from '@angular/forms';
-import { FirstKeyPipe } from '../../shared/pipes/first-key.pipe';
+import { RouterLink } from '@angular/router';
+import { trigger, transition, style, animate, keyframes } from '@angular/animations';
 import { AuthService } from '../../shared/services/auth.service';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-registration',
   standalone: true,
-  imports: [
-    ReactiveFormsModule, 
-    CommonModule, 
-    FirstKeyPipe,
-  ],
+  imports: [ReactiveFormsModule, CommonModule, RouterLink],
   templateUrl: './registration.component.html',
-  styles: ``
+  styleUrls: ['./registration.component.css'],
+  animations: [
+    trigger('fadeInUp', [
+      transition(':enter', [
+        style({ opacity: 0, transform: 'translateY(40px)' }),
+        animate('600ms ease-out', style({ opacity: 1, transform: 'translateY(0)' }))
+      ])
+    ]),
+    trigger('shake', [
+      transition(':enter', [
+        animate(
+          '500ms ease-in',
+          keyframes([
+            style({ transform: 'translateX(-10px)', offset: 0.2 }),
+            style({ transform: 'translateX(10px)', offset: 0.4 }),
+            style({ transform: 'translateX(-10px)', offset: 0.6 }),
+            style({ transform: 'translateX(10px)', offset: 0.8 }),
+            style({ transform: 'translateX(0)', offset: 1 })
+          ])
+        )
+      ])
+    ])
+  ]
 })
-
 export class RegistrationComponent {
   constructor(
     public formBuilder: FormBuilder, 
     private service: AuthService,
     private toastr: ToastrService
   ) {}
+
   isSubmitted:boolean = false;
 
   passWordMatchValid: ValidatorFn = (control:AbstractControl):null => {
@@ -54,10 +73,7 @@ export class RegistrationComponent {
           if (res.succeeded) {
             this.form.reset();
             this.isSubmitted = false;
-            this.toastr.success(
-              'New User Created..!',
-              'Registration Successfull'
-            );
+            this.toastr.success('New User Created..!','Registration Successfull');
           }
         },
         error: (err) => {
@@ -65,24 +81,13 @@ export class RegistrationComponent {
             err.error.errors.forEach((x: any) => {
               switch (x.code) {
                 case 'DuplicateUserName':
-                  this.toastr.error(
-                    'User Name is already taken..!',
-                    'Registration Failed'
-                  );
+                  this.toastr.error('User Name is already taken..!','Registration Failed');
                   break;
-
                 case 'DuplicateEmail':
-                  this.toastr.error(
-                    'Email is already taken..!',
-                    'Registration Failed'
-                  );
+                  this.toastr.error('Email is already taken..!','Registration Failed');
                   break;
-
                 default:
-                  this.toastr.error(
-                    'Contact the developer',
-                    'Registration Failed'
-                  );
+                  this.toastr.error('Contact the developer','Registration Failed');
                   console.log(x);
                   break;
               }

@@ -1,40 +1,45 @@
-<div class="mb-4 h2 text-success">Sign Up</div>
-<form [formGroup]="form" (ngSubmit)="onSubmit()">
+<div class="auth-container" @fadeInUp>
+  <h2 class="text-success text-center mb-4">Sign Up</h2>
+
+  <div class="text-center mb-3">
+    Already have an account?
+    <a routerLink="/login" class="text-decoration-none fw-medium text-success d-inline-block">Login</a>
+  </div>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" [@shake]="form.invalid && isSubmitted ? 'in' : null">
     <div class="mb-3">
-        <input class="form-control bg-body-secondary" placeholder="Full Name" formControlName="fullName">
-        <div class="error-feedback" *ngIf="hasDisplayableError('fullName') && form.controls.fullName.hasError('required')">Please enter your Full Name</div>
+      <input class="form-control bg-body-secondary" placeholder="Full Name" formControlName="fullName">
+      <div class="error-feedback" *ngIf="hasDisplayableError('fullName') && form.controls.fullName.hasError('required')">Please enter your Full Name</div>
     </div>
+
     <div class="mb-3">
-        <input class="form-control bg-body-secondary" placeholder="User Name" formControlName="userName">
-        <div class="error-feedback" *ngIf="hasDisplayableError('userName') && form.controls.userName.hasError('required')">Enter your user name</div>
+      <input class="form-control bg-body-secondary" placeholder="User Name" formControlName="userName">
+      <div class="error-feedback" *ngIf="hasDisplayableError('userName') && form.controls.userName.hasError('required')">Enter your user name</div>
     </div>
+
     <div class="mb-3">
-        <input class="form-control bg-body-secondary" placeholder="Email" formControlName="email">
-        <div class="error-feedback" *ngIf="hasDisplayableError('email')">
-            <div *ngIf="form.controls.email.hasError('required')">
-                Please enter your email
-            </div>
-            <div *ngIf="form.controls.email.hasError('email')">
-                Please enter valid email
-            </div>
-        </div>
+      <input class="form-control bg-body-secondary" placeholder="Email" formControlName="email">
+      <div class="error-feedback" *ngIf="hasDisplayableError('email')">
+        <div *ngIf="form.controls.email.hasError('required')">Please enter your email</div>
+        <div *ngIf="form.controls.email.hasError('email')">Please enter valid email</div>
+      </div>
     </div>
+
     <div class="mb-3">
-        <input class="form-control bg-body-secondary" placeholder="Password" formControlName="password">
-        <div class="error-feedback" *ngIf="hasDisplayableError('password')">
-            <div *ngIf="form.controls.password.hasError('required')">
-                Please enter your password
-            </div>
-            <div *ngIf="form.controls.password.hasError('minlength')">
-                Password at least 3 character
-            </div>
-        </div>
+      <input type="password" class="form-control bg-body-secondary" placeholder="Password" formControlName="password">
+      <div class="error-feedback" *ngIf="hasDisplayableError('password')">
+        <div *ngIf="form.controls.password.hasError('required')">Please enter your password</div>
+        <div *ngIf="form.controls.password.hasError('minlength')">Password at least 3 character</div>
+      </div>
     </div>
+
     <div class="mb-3">
-        <input class="form-control bg-body-secondary" placeholder="Confirm Password" formControlName="confirmPassword">
-        <div class="error-feedback" *ngIf="hasDisplayableError('confirmPassword') && form.controls.confirmPassword.hasError('passWordMissMatch')">Password Doesn't Match</div>
+      <input type="password" class="form-control bg-body-secondary" placeholder="Confirm Password" formControlName="confirmPassword">
+      <div class="error-feedback" *ngIf="hasDisplayableError('confirmPassword') && form.controls.confirmPassword.hasError('passWordMissMatch')">Password Doesn't Match</div>
     </div>
+
     <div class="mt-4">
-        <button type="submit" class="btn btn-success w-100 rounded-3">Register</button>
+      <button type="submit" class="btn btn-success w-100 rounded-3 shadow-sm">Register</button>
     </div>
-</form>
+  </form>
+</div>
