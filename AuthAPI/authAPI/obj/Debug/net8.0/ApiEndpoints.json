@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "AccountController",
+    "Method": "SignIn",
+    "RelativePath": "api/Account/signin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userLogin",
+        "Type": "authAPI.Model.UserLogin",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountController",
     "Method": "SignUp",
     "RelativePath": "api/Account/signup",
     "HttpMethod": "POST",

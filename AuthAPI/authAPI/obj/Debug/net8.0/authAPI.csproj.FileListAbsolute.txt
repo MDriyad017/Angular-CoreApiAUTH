@@ -298,3 +298,4 @@ E:\Angular_With_CoreAPI\Projects\Angular-CoreApiAUTH\AuthAPI\authAPI\obj\Debug\n
 E:\Angular_With_CoreAPI\Projects\Angular-CoreApiAUTH\AuthAPI\authAPI\obj\Debug\net8.0\authAPI.pdb
 E:\Angular_With_CoreAPI\Projects\Angular-CoreApiAUTH\AuthAPI\authAPI\obj\Debug\net8.0\authAPI.genruntimeconfig.cache
 E:\Angular_With_CoreAPI\Projects\Angular-CoreApiAUTH\AuthAPI\authAPI\obj\Debug\net8.0\ref\authAPI.dll
+F:\Riyad\AngularPractice\Projects\Angular-CoreApiAUTH\AuthAPI\authAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

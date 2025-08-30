@@ -1,16 +1,22 @@
 ﻿using authAPI.Model;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 [Route("api/[controller]")]
 [ApiController]
 public class AccountController : ControllerBase
 {
     private readonly UserManager<AppUser> _userManager;
+    private readonly IConfiguration _configuration;
 
-    public AccountController(UserManager<AppUser> userManager)
+    public AccountController(UserManager<AppUser> userManager, IConfiguration configuration)
     {
         _userManager = userManager;
+        _configuration = configuration;
     }
 
     [HttpPost("signup")]
@@ -29,5 +35,33 @@ public class AccountController : ControllerBase
             return Ok(result);
         else
             return BadRequest(result);
+    }
+
+    [HttpPost("signin")]
+    public async Task<IActionResult> SignIn([FromBody] UserLogin userLogin)
+    {
+        var user = await _userManager.FindByEmailAsync(userLogin.Email);
+        if (user != null && await _userManager.CheckPasswordAsync(user, userLogin.Password))
+        {
+            var loginKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["AppSettings:JWTSecret"]!));
+            var tokenDecrptr = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new Claim[]
+                {
+                        new Claim("UserId", user.Id.ToString())
+                }),
+                Expires = DateTime.UtcNow.AddMinutes(5),
+                SigningCredentials = new SigningCredentials(loginKey, SecurityAlgorithms.HmacSha256Signature)
+            };
+
+            var tokenHandlr = new JwtSecurityTokenHandler();
+            var securityToken = tokenHandlr.CreateToken(tokenDecrptr);
+            var token = tokenHandlr.WriteToken(securityToken);
+            return Ok(new { token });
+        }
+        else
+        {
+            return BadRequest(new { message = "Email or password is incorrect" });
+        }
     }
 }
