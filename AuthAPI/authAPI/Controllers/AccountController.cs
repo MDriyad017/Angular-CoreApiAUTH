@@ -1,6 +1,7 @@
 ﻿using authAPI.Model;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -38,12 +39,12 @@ public class AccountController : ControllerBase
     }
 
     [HttpPost("signin")]
-    public async Task<IActionResult> SignIn([FromBody] UserLogin userLogin)
+    public async Task<IActionResult> SignIn(UserLogin userLogin, IOptions<AppSettings> appSettings)
     {
         var user = await _userManager.FindByEmailAsync(userLogin.Email);
         if (user != null && await _userManager.CheckPasswordAsync(user, userLogin.Password))
         {
-            var loginKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["AppSettings:JWTSecret"]!));
+            var loginKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(appSettings.Value.JWTSecret));
             var tokenDecrptr = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new Claim[]
