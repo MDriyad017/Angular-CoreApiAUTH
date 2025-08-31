@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, ReactiveFormsModule, ValidatorFn, Validators } from '@angular/forms';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { trigger, transition, style, animate, keyframes } from '@angular/animations';
 import { AuthService } from '../../shared/services/auth.service';
 import { ToastrService } from 'ngx-toastr';
@@ -35,12 +35,18 @@ import { ToastrService } from 'ngx-toastr';
     ])
   ]
 })
-export class RegistrationComponent {
+export class RegistrationComponent implements OnInit{
   constructor(
     public formBuilder: FormBuilder, 
     private service: AuthService,
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    private router: Router
   ) {}
+
+  ngOnInit(): void {
+    if(this.service.isLoggedIn())
+      this.router.navigateByUrl('/dashboard');
+  }
 
   isSubmitted:boolean = false;
 
@@ -74,6 +80,7 @@ export class RegistrationComponent {
             this.form.reset();
             this.isSubmitted = false;
             this.toastr.success('New User Created..!','Registration Successfull');
+            this.router.navigateByUrl('/login');
           }
         },
         error: (err) => {
