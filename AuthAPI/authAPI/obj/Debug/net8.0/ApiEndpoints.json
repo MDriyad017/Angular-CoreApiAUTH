@@ -1,6 +1,16 @@
 [
   {
     "ContainingType": "AccountController",
+    "Method": "GetProfile",
+    "RelativePath": "api/Account/GetProfile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountController",
     "Method": "SignIn",
     "RelativePath": "api/Account/signin",
     "HttpMethod": "POST",
@@ -332,26 +342,5 @@
         "StatusCode": 400
       }
     ]
-  },
-  {
-    "ContainingType": "authAPI.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[authAPI.WeatherForecast, authAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "GetWeatherForecast"
   }
 ]

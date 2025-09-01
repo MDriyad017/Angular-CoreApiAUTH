@@ -3,28 +3,48 @@
   "WorkspaceRootPath": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|f:\\riyad\\angularpractice\\projects\\angular-coreapiauth\\authapi\\authapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|f:\\riyad\\angularpractice\\projects\\angular-coreapiauth\\authapi\\authapi\\extensions\\identityextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\extensions\\identityextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|f:\\riyad\\angularpractice\\projects\\angular-coreapiauth\\authapi\\authapi\\extensions\\appconfigextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\extensions\\appconfigextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|f:\\riyad\\angularpractice\\projects\\angular-coreapiauth\\authapi\\authapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|f:\\riyad\\angularpractice\\projects\\angular-coreapiauth\\authapi\\authapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|f:\\riyad\\angularpractice\\projects\\angular-coreapiauth\\authapi\\authapi\\model\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\model\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|f:\\riyad\\angularpractice\\projects\\angular-coreapiauth\\authapi\\authapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|f:\\riyad\\angularpractice\\projects\\angular-coreapiauth\\authapi\\authapi\\model\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\model\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|f:\\riyad\\angularpractice\\projects\\angular-coreapiauth\\authapi\\authapi\\extensions\\addswaggerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\extensions\\addswaggerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|f:\\riyad\\angularpractice\\projects\\angular-coreapiauth\\authapi\\authapi\\extensions\\efcoreextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\extensions\\efcoreextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|f:\\riyad\\angularpractice\\projects\\angular-coreapiauth\\authapi\\authapi\\model\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\model\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|f:\\riyad\\angularpractice\\projects\\angular-coreapiauth\\authapi\\authapi\\model\\userregistrationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\model\\userregistrationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|f:\\riyad\\angularpractice\\projects\\angular-coreapiauth\\authapi\\authapi\\model\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\model\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|f:\\riyad\\angularpractice\\projects\\angular-coreapiauth\\authapi\\authapi\\model\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\model\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|f:\\riyad\\angularpractice\\projects\\angular-coreapiauth\\authapi\\authapi\\model\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,17 +58,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Program.cs",
               "RelativeDocumentMoniker": "authAPI\\Program.cs",
               "ToolTip": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Program.cs",
               "RelativeToolTip": "authAPI\\Program.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAYwDQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-27T06:57:37.64Z",
               "IsPinned": true,
@@ -56,86 +76,142 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AccountController.cs",
               "DocumentMoniker": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "authAPI\\Controllers\\AccountController.cs",
               "ToolTip": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Controllers\\AccountController.cs",
               "RelativeToolTip": "authAPI\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwC0AAABZAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAawCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-28T12:16:36.074Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:254354193:0:{71f361cc-493f-47c0-923f-f2570b6f8618}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserLogin.cs",
-              "DocumentMoniker": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\UserLogin.cs",
-              "RelativeDocumentMoniker": "authAPI\\Model\\UserLogin.cs",
-              "ToolTip": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\UserLogin.cs",
-              "RelativeToolTip": "authAPI\\Model\\UserLogin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "IdentityExtensions.cs",
+              "DocumentMoniker": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Extensions\\IdentityExtensions.cs",
+              "RelativeDocumentMoniker": "authAPI\\Extensions\\IdentityExtensions.cs",
+              "ToolTip": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Extensions\\IdentityExtensions.cs",
+              "RelativeToolTip": "authAPI\\Extensions\\IdentityExtensions.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCwAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-30T10:41:06.176Z",
+              "WhenOpened": "2025-08-30T18:21:26.759Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UserRegistrationModel.cs",
-              "DocumentMoniker": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\UserRegistrationModel.cs",
-              "RelativeDocumentMoniker": "authAPI\\Model\\UserRegistrationModel.cs",
-              "ToolTip": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\UserRegistrationModel.cs",
-              "RelativeToolTip": "authAPI\\Model\\UserRegistrationModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
+              "Title": "AppSettings.cs",
+              "DocumentMoniker": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\AppSettings.cs",
+              "RelativeDocumentMoniker": "authAPI\\Model\\AppSettings.cs",
+              "ToolTip": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\AppSettings.cs",
+              "RelativeToolTip": "authAPI\\Model\\AppSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T12:16:59.436Z",
+              "WhenOpened": "2025-08-30T19:19:28.909Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AppConfigExtensions.cs",
+              "DocumentMoniker": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Extensions\\AppConfigExtensions.cs",
+              "RelativeDocumentMoniker": "authAPI\\Extensions\\AppConfigExtensions.cs",
+              "ToolTip": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Extensions\\AppConfigExtensions.cs",
+              "RelativeToolTip": "authAPI\\Extensions\\AppConfigExtensions.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T18:57:48.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddSwaggerExtensions.cs",
+              "DocumentMoniker": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Extensions\\AddSwaggerExtensions.cs",
+              "RelativeDocumentMoniker": "authAPI\\Extensions\\AddSwaggerExtensions.cs",
+              "ToolTip": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Extensions\\AddSwaggerExtensions.cs",
+              "RelativeToolTip": "authAPI\\Extensions\\AddSwaggerExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T18:49:24.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EFCoreExtensions.cs",
+              "DocumentMoniker": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Extensions\\EFCoreExtensions.cs",
+              "RelativeDocumentMoniker": "authAPI\\Extensions\\EFCoreExtensions.cs",
+              "ToolTip": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Extensions\\EFCoreExtensions.cs",
+              "RelativeToolTip": "authAPI\\Extensions\\EFCoreExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T18:41:02.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserLogin.cs",
+              "DocumentMoniker": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\UserLogin.cs",
+              "RelativeDocumentMoniker": "authAPI\\Model\\UserLogin.cs",
+              "ToolTip": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\UserLogin.cs",
+              "RelativeToolTip": "authAPI\\Model\\UserLogin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T10:41:06.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserRegistrationModel.cs",
+              "DocumentMoniker": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\UserRegistrationModel.cs",
+              "RelativeDocumentMoniker": "authAPI\\Model\\UserRegistrationModel.cs",
+              "ToolTip": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\UserRegistrationModel.cs",
+              "RelativeToolTip": "authAPI\\Model\\UserRegistrationModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T12:16:59.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\appsettings.json",
               "RelativeDocumentMoniker": "authAPI\\appsettings.json",
               "ToolTip": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\appsettings.json",
               "RelativeToolTip": "authAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-08-27T18:19:57.722Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "AppUser.cs",
               "DocumentMoniker": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\AppUser.cs",
               "RelativeDocumentMoniker": "authAPI\\Model\\AppUser.cs",
               "ToolTip": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\AppUser.cs",
               "RelativeToolTip": "authAPI\\Model\\AppUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T06:57:41.136Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T06:57:41.136Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "AppDBContext.cs",
               "DocumentMoniker": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\AppDBContext.cs",
               "RelativeDocumentMoniker": "authAPI\\Model\\AppDBContext.cs",
               "ToolTip": "F:\\Riyad\\AngularPractice\\Projects\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\AppDBContext.cs",
               "RelativeToolTip": "authAPI\\Model\\AppDBContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T05:11:50.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T05:11:50.21Z"
             }
           ]
         }

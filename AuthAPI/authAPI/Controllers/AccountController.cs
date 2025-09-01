@@ -1,4 +1,5 @@
 ﻿using authAPI.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
@@ -64,5 +65,13 @@ public class AccountController : ControllerBase
         {
             return BadRequest(new { message = "Email or password is incorrect" });
         }
+    }
+
+    [HttpGet("GetProfile")]
+    [Authorize]
+    public IActionResult GetProfile()
+    {
+        var data = "User Profile Api";
+        return Ok(data);
     }
 }
