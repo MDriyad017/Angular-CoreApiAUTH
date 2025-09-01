@@ -38,7 +38,7 @@ public class AccountController : ControllerBase
         else
             return BadRequest(result);
     }
-
+    
     [HttpPost("signin")]
     public async Task<IActionResult> SignIn(UserLogin userLogin, IOptions<AppSettings> appSettings)
     {

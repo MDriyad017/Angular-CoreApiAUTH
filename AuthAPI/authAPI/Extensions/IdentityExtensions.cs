@@ -1,5 +1,6 @@
 ﻿using authAPI.Model;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -46,6 +47,15 @@ namespace authAPI.Extensions
                 };
             });
 
+            //// If the following code is used then all of the Action will be under the authorization 
+            //services.AddAuthorization(opt =>
+            //{
+            //    opt.FallbackPolicy = new AuthorizationPolicyBuilder()
+            //    .AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme)
+            //    .RequireAuthenticatedUser()
+            //    .Build();
+            //});
+            ////===========================>>
             return services;
         }
 
