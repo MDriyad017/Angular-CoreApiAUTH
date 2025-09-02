@@ -40,6 +40,7 @@ public class AccountController : ControllerBase
     }
     
     [HttpPost("signin")]
+    [AllowAnonymous]
     public async Task<IActionResult> SignIn(UserLogin userLogin, IOptions<AppSettings> appSettings)
     {
         var user = await _userManager.FindByEmailAsync(userLogin.Email);
@@ -67,11 +68,23 @@ public class AccountController : ControllerBase
         }
     }
 
-    [HttpGet("GetProfile")]
+    [HttpGet("GetUserProfile")]
     [Authorize]
-    public IActionResult GetProfile()
+    public async Task<IActionResult> GetProfile()
     {
-        var data = "User Profile Api";
-        return Ok(data);
+        // 👇 This "User" is the currently authenticated user
+        var userId = User.Claims.First(x => x.Type == "UserId").Value;
+
+        var userDetails = await _userManager.FindByIdAsync(userId);
+
+        if (userDetails == null)
+            return NotFound("User not found");
+
+        return Ok(new
+        {
+            FullName = userDetails.FullName,
+            UserName = userDetails.UserName,
+            Email = userDetails.Email,
+        });
     }
 }

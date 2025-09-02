@@ -2,7 +2,7 @@
   {
     "ContainingType": "AccountController",
     "Method": "GetProfile",
-    "RelativePath": "api/Account/GetProfile",
+    "RelativePath": "api/Account/GetUserProfile",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
