@@ -12,6 +12,7 @@ namespace authAPI.Extensions
         public static IServiceCollection AddIdentityHandlerAndStores(this IServiceCollection services)
         {
             services.AddIdentityApiEndpoints<AppUser>()
+                    .AddRoles<IdentityRole>()
                     .AddEntityFrameworkStores<AppDBContext>();
 
             return services;

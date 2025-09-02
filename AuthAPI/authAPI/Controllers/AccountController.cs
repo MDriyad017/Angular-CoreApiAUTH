@@ -28,10 +28,15 @@ public class AccountController : ControllerBase
         {
             Email = userRegistrationModel.Email,
             FullName = userRegistrationModel.FullName,
-            UserName = userRegistrationModel.UserName
+            UserName = userRegistrationModel.UserName,
+            Gender = userRegistrationModel.Gender,
+            DOB = DateOnly.FromDateTime(DateTime.Now.AddYears(-userRegistrationModel.Age)),
+            LocationId = userRegistrationModel.LocationId,
         };
 
         var result = await _userManager.CreateAsync(user, userRegistrationModel.Password);
+
+        await _userManager.AddToRoleAsync(user, userRegistrationModel.Role);
 
         if (result.Succeeded)
             return Ok(result);
@@ -72,7 +77,7 @@ public class AccountController : ControllerBase
     [Authorize]
     public async Task<IActionResult> GetProfile()
     {
-        // 👇 This "User" is the currently authenticated user
+        // This "User" is the currently authenticated user
         var userId = User.Claims.First(x => x.Type == "UserId").Value;
 
         var userDetails = await _userManager.FindByIdAsync(userId);
