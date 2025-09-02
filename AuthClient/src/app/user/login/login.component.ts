@@ -74,6 +74,7 @@ export class LoginComponent implements OnInit{
         next: (res: any) => {
           this.service.saveToken(res.token);
           this.router.navigateByUrl('/dashboard');
+          this.toastr.success('Welcome..!','Login Successfull');
         },
         error:err => {
           if(err.status == 400 || err.status == 500)
