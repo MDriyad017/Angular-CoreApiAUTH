@@ -49,15 +49,26 @@ public class AccountController : ControllerBase
     public async Task<IActionResult> SignIn(UserLogin userLogin, IOptions<AppSettings> appSettings)
     {
         var user = await _userManager.FindByEmailAsync(userLogin.Email);
+
         if (user != null && await _userManager.CheckPasswordAsync(user, userLogin.Password))
         {
+            var roles = await _userManager.GetRolesAsync(user);
             var loginKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(appSettings.Value.JWTSecret));
+
+            ClaimsIdentity claims = new ClaimsIdentity(new Claim[]
+            {
+                    new Claim("UserId", user.Id.ToString()),
+                    new Claim("UserName", user.UserName.ToString()),
+                    new Claim("Email", user.Email.ToString()),
+                    new Claim(ClaimTypes.Role,roles.First()),
+            });
+
+            if (user.LocationId != null)
+                claims.AddClaim(new Claim("LocationId", user.LocationId.ToString()!));
+
             var tokenDecrptr = new SecurityTokenDescriptor
             {
-                Subject = new ClaimsIdentity(new Claim[]
-                {
-                        new Claim("UserId", user.Id.ToString())
-                }),
+                Subject = claims,
                 Expires = DateTime.UtcNow.AddMinutes(5),
                 SigningCredentials = new SigningCredentials(loginKey, SecurityAlgorithms.HmacSha256Signature)
             };

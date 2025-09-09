@@ -48,15 +48,25 @@ namespace authAPI.Extensions
                 };
             });
 
-            //// If the following code is used then all of the Action will be under the authorization 
-            //services.AddAuthorization(opt =>
-            //{
-            //    opt.FallbackPolicy = new AuthorizationPolicyBuilder()
-            //    .AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme)
-            //    .RequireAuthenticatedUser()
-            //    .Build();
-            //});
-            ////===========================>>
+            services.AddAuthorization(opt =>
+            {
+                //// If the following code is used then all of the Action will be under the authorization 
+                //    opt.FallbackPolicy = new AuthorizationPolicyBuilder()
+                //    .AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme)
+                //    .RequireAuthenticatedUser()
+                //    .Build();
+                ////===========================>>
+
+                opt.AddPolicy("HasLocationId", policy => policy.RequireClaim("LocationId"));
+
+                //// This part Use For If The User Has LocationId or If not LocationId have then User Should Be "Admin"
+                //opt.AddPolicy("HasLocationIdOrAdmin", policy =>
+                //    policy.RequireAssertion(context =>
+                //        context.User.IsInRole("Admin") ||
+                //        context.User.HasClaim(c => c.Type == "LocationId")
+                //    ));
+            });
+
             return services;
         }
 
