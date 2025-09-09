@@ -11,6 +11,10 @@ export class AuthService {
   constructor(private http:HttpClient) { }
 
   createUser(formData:any){
+    formData.role = "SHOP MANAGER"
+    formData.gender = "Male"
+    formData.age = 18
+
     return this.http.post(environment.apiBaseUrl + '/account/signup', formData);
   }
 
