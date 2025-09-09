@@ -1,2 +1,3 @@
 # Angular-CoreApiAUTH
-next watch start will be 57:20 minute 
+
+(Part 3) next watch start will be _ 1:10:45 _ time 
