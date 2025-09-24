@@ -57,14 +57,15 @@ public class AccountController : ControllerBase
 
             ClaimsIdentity claims = new ClaimsIdentity(new Claim[]
             {
-                    new Claim("UserId", user.Id.ToString()),
-                    new Claim("UserName", user.UserName.ToString()),
-                    new Claim("Email", user.Email.ToString()),
+                    new Claim("userId", user.Id.ToString()),
+                    new Claim("userName", user.UserName.ToString()),
+                    new Claim("email", user.Email.ToString()),
+                    new Claim("gender", user.Gender.ToString()),
                     new Claim(ClaimTypes.Role,roles.First()),
             });
 
             if (user.LocationId != null)
-                claims.AddClaim(new Claim("LocationId", user.LocationId.ToString()!));
+                claims.AddClaim(new Claim("locationId", user.LocationId.ToString()!));
 
             var tokenDecrptr = new SecurityTokenDescriptor
             {
@@ -89,7 +90,7 @@ public class AccountController : ControllerBase
     public async Task<IActionResult> GetProfile()
     {
         // This "User" is the currently authenticated user
-        var userId = User.Claims.First(x => x.Type == "UserId").Value;
+        var userId = User.Claims.First(x => x.Type == "userId").Value;
 
         var userDetails = await _userManager.FindByIdAsync(userId);
 

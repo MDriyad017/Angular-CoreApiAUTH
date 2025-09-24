@@ -9,10 +9,10 @@ namespace authAPI.Controllers
     public class AdministrationController : ControllerBase
     {
         [HttpGet("GetUserList")]
-        [Authorize(Roles = "Admin, FACTORY MANAGER")]
+        [Authorize(Roles = "Admin, Factory Manager")]
         public IActionResult UserList()
         {
-            var access = "Admin Only";
+            var access = "Admin Only Or Factory Manager";
             return Ok(access);
         }
 
@@ -20,8 +20,16 @@ namespace authAPI.Controllers
         [Authorize(Policy = "HasLocationId")]
         public IActionResult PolicyAuthTest()
         {
-            var access = "This Man Have Location Id Or This Man Is a Admin";
-            return Ok(access);
+            var data = "This Man Have Location Id";
+            return Ok(data);
+        }
+
+        [HttpGet("MaternityLeave")]
+        [Authorize(Policy = "FemaleOnly")]
+        public IActionResult ApplyMaternityLeave()
+        {
+            var data = "Maternity Leave For Female";
+            return Ok(data);
         }
     }
 }

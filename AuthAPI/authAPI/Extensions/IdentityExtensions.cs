@@ -57,13 +57,14 @@ namespace authAPI.Extensions
                 //    .Build();
                 ////===========================>>
 
-                opt.AddPolicy("HasLocationId", policy => policy.RequireClaim("LocationId"));
+                opt.AddPolicy("HasLocationId", policy => policy.RequireClaim("locationId"));
+                opt.AddPolicy("FemaleOnly", policy => policy.RequireClaim("gender", "Female"));
 
                 //// This part Use For If The User Has LocationId or If not LocationId have then User Should Be "Admin"
                 //opt.AddPolicy("HasLocationIdOrAdmin", policy =>
                 //    policy.RequireAssertion(context =>
                 //        context.User.IsInRole("Admin") ||
-                //        context.User.HasClaim(c => c.Type == "LocationId")
+                //        context.User.HasClaim(c => c.Type == "locationId")
                 //    ));
             });
 
