@@ -1,5 +1,5 @@
 <div class="text-center">
-    <button class="btn btn-dark" (click)="onLogout()">Logout</button>
     <h1 class="display-6">Welcome</h1>
     <h3 class="display-6 fw-bold text-primary">{{fullName}}</h3>
+    <button class="btn btn-success" [appHideIfClaimsNotMet]="claimReq.adminOnly">Admin Operatoin</button>
 </div>

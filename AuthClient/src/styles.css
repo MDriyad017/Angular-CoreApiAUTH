@@ -9,3 +9,43 @@ body{
     margin: 0.3rem !important;
     margin-top: 0.1rem !important;
 }
+
+#main {
+  margin-left: 240px;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+#main.expanded {
+  margin-left: 0;
+}
+
+/* Sidebar */
+#sidebar {
+  width: 240px;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -240px;
+  background: #212529;
+  padding-top: 1rem;
+  transition: left 0.3s ease-in-out;
+  z-index: 1050;
+}
+
+#sidebar.active {
+  left: 0;
+}
+
+/* Sidebar links */
+#sidebar ul li a {
+  color: #adb5bd;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: background 0.3s;
+}
+
+#sidebar ul li a:hover {
+  background: #343a40;
+  color: #fff;
+}
+
