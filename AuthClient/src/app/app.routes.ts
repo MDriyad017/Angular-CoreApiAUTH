@@ -11,6 +11,7 @@ import { ApplyForMaternityLeaveComponent } from './authorizetion/apply-for-mater
 import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
 import { ForbiddenComponent } from './forbidden/forbidden.component';
 import { claimReq } from './shared/utils/claimReq-utils';
+import { ProductInsertComponent } from './Insert/product-insert/product-insert.component';
 
 export const routes: Routes = [
   {
@@ -27,17 +28,24 @@ export const routes: Routes = [
     canActivateChild: [authGuard],
     children: [
       { path: 'dashboard', component: DashboardComponent },
-      { path: 'admin-only', component: AdminOnlyComponent,
+      { 
+        path: 'admin-only', component: AdminOnlyComponent,
         data: { claimReq: claimReq.adminOnly }
       },
-      { path: 'admin-or-factory-manager', component: AdminOrFactoryManagerComponent,
+      { 
+        path: 'admin-or-factory-manager', component: AdminOrFactoryManagerComponent,
         data: { claimReq: claimReq.adminOrFactoryManager }
       },
-      { path: 'admin-or-shop-manager', component: AdminOrShopManagerComponent,
+      { 
+        path: 'admin-or-shop-manager', component: AdminOrShopManagerComponent,
         data: { claimReq: claimReq.hasLocationId }
       },
-      { path: 'apply-for-maternity-leave', component: ApplyForMaternityLeaveComponent,
+      { 
+        path: 'apply-for-maternity-leave', component: ApplyForMaternityLeaveComponent,
         data: { claimReq: claimReq.femaleAndAdmin }
+      },
+      { 
+        path: 'product-insert', component: ProductInsertComponent
       },
       { path: 'forbidden', component: ForbiddenComponent},
     ]

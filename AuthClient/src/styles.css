@@ -19,7 +19,7 @@ body{
   margin-left: 0;
 }
 
-/* Sidebar */
+/* Sidebar - Updated for drawer behavior */
 #sidebar {
   width: 240px;
   min-height: 100vh;
@@ -30,6 +30,7 @@ body{
   padding-top: 1rem;
   transition: left 0.3s ease-in-out;
   z-index: 1050;
+  /* Add overlay background when open on mobile */
 }
 
 #sidebar.active {
@@ -37,15 +38,269 @@ body{
 }
 
 /* Sidebar links */
-#sidebar ul li a {
+#sidebar ul li a.sidebar-link {
   color: #adb5bd;
   text-decoration: none;
   border-radius: 0.25rem;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
+  position: relative;
+  margin: 2px 0;
 }
 
-#sidebar ul li a:hover {
+#sidebar ul li a.sidebar-link:hover {
   background: #343a40;
   color: #fff;
 }
 
+/* Active menu item styles */
+#sidebar ul li a.sidebar-link.active {
+  background: #cfe2ff !important;
+  color: rgb(105, 105, 105) !important;
+  font-weight: 600;
+}
+
+/* Optional: Add a left border indicator for active item */
+#sidebar ul li a.sidebar-link.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #0d6efd54;
+  border-radius: 2px;
+}
+
+/* ========== DRAWER BEHAVIOR FOR MOBILE ========== */
+
+/* For small screens - make sidebar overlay content */
+@media (max-width: 991.98px) {
+  #main {
+    margin-left: 0 !important; /* Remove margin on mobile */
+    width: 100%;
+  }
+  
+  #sidebar {
+    /* Box shadow for better visual separation */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Optional: Add overlay background when sidebar is open */
+  #sidebar.active::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 240px; /* Start from sidebar width */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+
+  .container-fluid{
+    justify-content: space-between !important;
+  }
+}
+
+/* For larger screens - keep the original behavior */
+@media (min-width: 992px) {
+  #main {
+    margin-left: 240px;
+  }
+  
+  #main.expanded {
+    margin-left: 0;
+  }
+  
+  #sidebar {
+    left: 0; /* Always visible on desktop */
+  }
+  
+  /* Hide the close button on desktop */
+  #sidebar .btn-outline-light.d-lg-none {
+    display: none !important;
+  }
+}
+
+/* ========== ENHANCED NAVBAR STYLES ========== */
+.navbar.bg-primary-subtle {
+  background: linear-gradient(135deg, #cfe2ff 0%, #e3f2fd 100%) !important;
+  border-bottom: 1px solid #b3d9ff;
+  box-shadow: 0 2px 12px rgba(13, 110, 253, 0.15);
+  padding: 0.5rem 0;
+  backdrop-filter: blur(10px);
+}
+
+/* Sidebar Toggle Button */
+.btn-outline-dark {
+  border: 1px solid #0d6efd;
+  color: #0d6efd;
+  background: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(13, 110, 253, 0.1);
+}
+
+.btn-outline-dark:hover {
+  background: #0d6efd;
+  color: white;
+  border-color: #0d6efd;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(13, 110, 253, 0.25);
+}
+
+/* User Dropdown Styles */
+.user-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.user-dropdown-btn {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border: 1px solid #94bdfc;
+  padding: 4px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #3988ff;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(13, 110, 253, 0.15);
+}
+
+.user-dropdown-btn:hover {
+  background: linear-gradient(135deg, #4c92fa 0%, #0a58ca 100%);
+  color: white;
+  border-color: #3b82ee;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
+
+.dropdown-arrow {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+  margin-left: 8px;
+}
+
+.user-dropdown-menu.show + .user-dropdown-btn .dropdown-arrow,
+.user-dropdown:hover .user-dropdown-btn .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.user-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #e3f2fd;
+  border-radius: 5px;
+  box-shadow: 0 8px 32px rgba(13, 110, 253, 0.15);
+  min-width: 200px;
+  padding: 2px 0;
+  margin-top: 6px;
+  z-index: 1000;
+  display: none;
+  backdrop-filter: blur(10px);
+}
+
+.user-dropdown-menu.show {
+  display: block;
+  animation: slideDown 0.2s ease;
+}
+
+@keyframes slideDown {
+  from { 
+    opacity: 0; 
+    transform: translateY(-8px) scale(0.95); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0) scale(1); 
+  }
+}
+
+.user-dropdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 15px;
+  color: #495057;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  width: 96%;
+  text-align: left;
+  font-size: 14px;
+  margin: 2px 4px;
+  border-radius: 4px;
+}
+
+.user-dropdown-item:hover {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  color: #0d6efd;
+  font-weight: 500;
+  /* transform: translateX(4px); */
+}
+
+.user-dropdown-item i {
+  color: #6c757d;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.user-dropdown-item:hover i {
+  color: #0d6efd;
+  transform: scale(1.1);
+}
+
+.user-dropdown-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #e3f2fd, transparent);
+  margin: 3px 12px;
+}
+
+.logout-item {
+  color: #dc3545 !important;
+}
+
+.logout-item:hover {
+  background: linear-gradient(135deg, #ffe6e6 0%, #ffcccc 100%) !important;
+  color: #dc3545 !important;
+}
+
+.logout-item:hover i {
+  color: #dc3545 !important;
+  transform: scale(1.1);
+}
+
+/* Hover functionality for desktop */
+@media (min-width: 769px) {
+  .user-dropdown:hover .user-dropdown-menu {
+    display: block;
+    animation: slideDown 0.2s ease;
+  }
+}
+
+/* Ensure dropdown works on mobile */
+@media (max-width: 768px) {
+  .user-dropdown-menu {
+    position: fixed;
+    top: auto;
+    right: 16px;
+    left: auto;
+    min-width: 200px;
+    margin-top: 4px;
+  }
+  
+  .navbar.bg-primary-subtle {
+    padding: 0.75rem 0;
+  }
+}
+
+/* Additional polish for the navbar */
+.container-fluid {
+  padding: 0 1rem;
+}

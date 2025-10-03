@@ -1,3 +1,8 @@
+<!-- Sidebar Backdrop (only visible on mobile when sidebar is open) -->
+<div *ngIf="isSidebarOpen && isMobileScreen()" 
+     class="sidebar-backdrop"
+     (click)="toggleSidebar()"></div>
+
 <!-- Sidebar -->
 <nav id="sidebar" [class.active]="isSidebarOpen">
   <div class="sidebar-header d-flex justify-content-between align-items-center px-3">
@@ -6,27 +11,39 @@
     <button *ngIf="isSidebarOpen" class="btn btn-sm btn-outline-light d-lg-none" (click)="toggleSidebar()">✖</button>
   </div>
   <ul class="list-unstyled px-2">
-    <li [appHideIfClaimsNotMet]="claimReq.adminOnly"><a class="text-light d-block py-2 px-3" routerLink="/admin-only">Admin</a></li>
-    <li [appHideIfClaimsNotMet]="claimReq.adminOrFactoryManager"><a class="text-light d-block py-2 px-3" routerLink="/admin-or-factory-manager">Factory Manager</a></li>
-    <li [appHideIfClaimsNotMet]="claimReq.hasLocationId"><a class="text-light d-block py-2 px-3" routerLink="/admin-or-shop-manager">Shop Manager</a></li>
-    <li [appHideIfClaimsNotMet]="claimReq.femaleAndAdmin"><a class="text-light d-block py-2 px-3" routerLink="/apply-for-maternity-leave">Maternity Leave</a></li>
+    <li [appHideIfClaimsNotMet]="claimReq.adminOnly">
+      <a class="sidebar-link text-light d-block py-1 px-3" routerLink="/admin-only" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="onMenuItemClick()">Admin</a>
+    </li>
+    <li [appHideIfClaimsNotMet]="claimReq.adminOrFactoryManager">
+      <a class="sidebar-link text-light d-block py-1 px-3" routerLink="/admin-or-factory-manager" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="onMenuItemClick()">Factory Manager</a>
+    </li>
+    <li [appHideIfClaimsNotMet]="claimReq.hasLocationId">
+      <a class="sidebar-link text-light d-block py-1 px-3" routerLink="/admin-or-shop-manager" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="onMenuItemClick()">Shop Manager</a>
+    </li>
+    <li [appHideIfClaimsNotMet]="claimReq.femaleAndAdmin">
+      <a class="sidebar-link text-light d-block py-1 px-3" routerLink="/apply-for-maternity-leave" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="onMenuItemClick()">Maternity Leave</a>
+    </li>
+    <li>
+      <a class="sidebar-link text-light d-block py-1 px-3" routerLink="/product-insert" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="onMenuItemClick()">Product Insert</a>
+    </li>
   </ul>
 </nav>
 
 <!-- Main Content -->
 <div id="main" [class.expanded]="!isSidebarOpen">
-  <nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
+  <nav class="navbar" style="background: #cfe2ff !important; padding: 0.3rem 0 !important; border-bottom: 1px solid #b3d9ffa3; box-shadow: 0 2px 12px rgba(13, 110, 253, 0.15);">
+    <div class="container-fluid" style="justify-content: end;">
       <!-- Open button (only on small screens & when sidebar is closed) -->
-      <button *ngIf="!isSidebarOpen" class="btn btn-outline-dark me-3 d-md-inline d-lg-none" (click)="toggleSidebar()">☰</button>
+      <button *ngIf="!isSidebarOpen" class="btn btn-outline-dark me-3 d-md-inline d-lg-none" (click)="toggleSidebar()"><i class="fas fa-bars"></i></button>
       
-      <a class="navbar-brand">Navbar</a>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-      <h3 class="display-6 fw-bold text-primary mb-0">{{ fullName }}</h3>
-      <button class="btn btn-dark" (click)="onLogout()">Logout</button>
+      <!-- User Profile Dropdown -->
+      <div class="user-dropdown">
+        <button class="user-dropdown-btn btn btn-outline-dark d-flex align-items-center" (click)="toggleUserDropdown()" (mouseenter)="onMouseEnterDropdown()" (mouseleave)="onMouseLeaveDropdown()"> <span class="me-2">{{ fullName }}</span> <i class="fas fa-chevron-down dropdown-arrow"></i> </button>
+        <div class="user-dropdown-menu" [class.show]="isUserDropdownOpen" (mouseenter)="onMouseEnterDropdown()" (mouseleave)="onMouseLeaveDropdown()"><a class="user-dropdown-item d-flex justify-content-between" (click)="onProfileClick()">Profile <i class="fas fa-user me-2"></i></a>
+          <div class="user-dropdown-divider"></div>
+          <a class="user-dropdown-item logout-item d-flex justify-content-between" (click)="onLogout()">Logout <i class="fas fa-sign-out-alt me-2"></i></a>
+        </div>
+      </div>
     </div>
   </nav>
 

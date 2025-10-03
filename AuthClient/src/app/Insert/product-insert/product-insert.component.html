@@ -1,0 +1,72 @@
+<!-- Main Content -->
+<div class="col-sm-12 col-md-12 col-12-12 main-content">
+    <div class="container-fluid pt-4">
+   
+    <!-- Product Insert Form -->
+    <div class="row" @fadeInUp>
+        <div class="col-md-6 col-lg-6 mb-2">
+        <div class="card shadow-sm border-0">
+            <div class="card-header" style="background-color: #cee2ff4d;">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="text-dark">Add New Product</h4>
+                </div>
+            </div>
+            <div class="card-body p-4">
+            <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+                <!-- Product Code Field -->
+                <div class="row mb-3">
+                <div class="col-sm-4">
+                    <label for="productCode" class="col-form-label fw-medium">Product Code :</label>
+                </div>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="productCode" placeholder="Enter product code" formControlName="productCode" [class.is-invalid]="hasDisplayableError('productCode')"/>
+                    <div class="invalid-feedback" *ngIf="hasDisplayableError('productCode') && productForm.controls.productCode.hasError('required')">Product code is required</div>
+                    <div class="invalid-feedback" *ngIf="hasDisplayableError('productCode') && productForm.controls.productCode.hasError('minlength')">Product code must be at least 3 characters</div>
+                </div>
+                </div>
+
+                <!-- Product Name Field -->
+                <div class="row mb-4">
+                    <div class="col-sm-4">
+                        <label for="productName" class="col-form-label fw-medium">Product Name:</label>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="productName" placeholder="Enter product name" formControlName="productName" [class.is-invalid]="hasDisplayableError('productName')"/>
+                        <div class="invalid-feedback" *ngIf="hasDisplayableError('productName') && productForm.controls.productName.hasError('required')">Product name is required</div>
+                        <div class="invalid-feedback" *ngIf="hasDisplayableError('productName') && productForm.controls.productName.hasError('minlength')">Product name must be at least 3 characters</div>
+                    </div>
+                </div>
+                <!-- Horizontal Line -->
+                <hr class="my-4">
+                <!-- Submit Button -->
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 d-flex col-xs-12 justify-content-end">
+                        <button type="submit" class="btn btn-success px-2 rounded-1 shadow-sm" [disabled]="isSubmitting || !productForm.valid">
+                        <span *ngIf="!isSubmitting">Add Product</span>
+                        <span *ngIf="isSubmitting">
+                            <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                            Adding Product...
+                        </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+            <!-- List of Products Section -->
+            <div class="card shadow-sm border-0">
+                <div class="card-header" style="background-color: #cee2ff4d;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="text-dark">List Of Product</h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="text-muted text-center mb-0">Product list will be displayed here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
