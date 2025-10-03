@@ -70,7 +70,7 @@ public class AccountController : ControllerBase
             var tokenDecrptr = new SecurityTokenDescriptor
             {
                 Subject = claims,
-                Expires = DateTime.UtcNow.AddMinutes(5),
+                Expires = DateTime.UtcNow.AddHours(5),
                 SigningCredentials = new SigningCredentials(loginKey, SecurityAlgorithms.HmacSha256Signature)
             };
 

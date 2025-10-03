@@ -454,3 +454,5 @@ E:\Development\Angular-CoreApiAUTH\AuthAPI\authAPI\obj\Debug\net8.0\authAPI.pdb
 E:\Development\Angular-CoreApiAUTH\AuthAPI\authAPI\obj\Debug\net8.0\authAPI.genruntimeconfig.cache
 E:\Development\Angular-CoreApiAUTH\AuthAPI\authAPI\obj\Debug\net8.0\ref\authAPI.dll
 E:\Development\Angular-CoreApiAUTH\AuthAPI\authAPI\obj\Debug\net8.0\swae.build.ex.cache
+E:\Development\Angular-CoreApiAUTH\AuthAPI\authAPI\bin\Debug\net8.0\efpt.config.json
+E:\Development\Angular-CoreApiAUTH\AuthAPI\authAPI\bin\Debug\net8.0\Scrutor.dll

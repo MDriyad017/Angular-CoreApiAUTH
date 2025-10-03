@@ -1,4 +1,9 @@
-﻿using authAPI.Model;
+﻿using authAPI.BLL;
+using authAPI.DAL.DataAccess;
+using authAPI.DAL.Interfaces;
+using authAPI.Model;
+using DAL.DataAccess;
+using DAL.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -44,7 +49,9 @@ namespace authAPI.Extensions
                     ValidateIssuerSigningKey = true,
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["AppSettings:JWTSecret"]!)),
                     ValidateIssuer = false,
-                    ValidateAudience = false
+                    ValidateAudience = false,
+                    ValidateLifetime = true,
+                    ClockSkew = TimeSpan.Zero,
                 };
             });
 
@@ -77,6 +84,15 @@ namespace authAPI.Extensions
             app.UseAuthorization();
 
             return app;
+        }
+
+        public static IServiceCollection AddBusinessEntities(this IServiceCollection services)
+        {
+            services.AddScoped<IInsertProduct, DInsertProduct>();
+            services.AddScoped<InsertProduct>();
+            services.AddScoped<ISelectProduct, DSelectProducts>();
+
+            return services;
         }
     }
 }

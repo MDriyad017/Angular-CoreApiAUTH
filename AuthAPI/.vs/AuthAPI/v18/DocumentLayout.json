@@ -3,40 +3,64 @@
   "WorkspaceRootPath": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\extensions\\identityextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\extensions\\identityextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\bll\\insertproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\bll\\insertproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\controllers\\administrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\controllers\\administrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\controllers\\insertcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\controllers\\insertcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\model\\common\\commonproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\model\\common\\commonproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\extensions\\identityextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\extensions\\identityextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\dal\\interfaces\\iselectproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\dal\\interfaces\\iselectproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\dal\\dataaccess\\dselectproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\dal\\dataaccess\\dselectproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\dal\\dataaccess\\dinsertproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\dal\\dataaccess\\dinsertproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\model\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\model\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\extensions\\efcoreextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\extensions\\efcoreextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\model\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\model\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\extensions\\addswaggerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\extensions\\addswaggerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\model\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\model\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\dal\\interfaces\\iinsertproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\dal\\interfaces\\iinsertproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\extensions\\efcoreextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\extensions\\efcoreextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\model\\common\\commonresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\model\\common\\commonresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\model\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\model\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\model\\userregistrationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,8 +71,20 @@
       "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\extensions\\appconfigextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\model\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\model\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\model\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\model\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\model\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\model\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\controllers\\administrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\controllers\\administrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|e:\\development\\angular-coreapiauth\\authapi\\authapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E82735D9-A37F-4246-B841-2974C979D890}|authAPI\\authAPI.csproj|solutionrelative:authapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -68,7 +104,7 @@
               "RelativeDocumentMoniker": "authAPI\\Controllers\\AccountController.cs",
               "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Controllers\\AccountController.cs",
               "RelativeToolTip": "authAPI\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAAAEMAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAqwDAAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-21T18:37:11.608Z",
               "IsPinned": true
@@ -76,31 +112,165 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AdministrationController.cs",
-              "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Controllers\\AdministrationController.cs",
-              "RelativeDocumentMoniker": "authAPI\\Controllers\\AdministrationController.cs",
-              "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Controllers\\AdministrationController.cs",
-              "RelativeToolTip": "authAPI\\Controllers\\AdministrationController.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAADgvxMAAAAgAAAAAAAAAA==",
+              "Title": "InsertController.cs",
+              "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Controllers\\InsertController.cs",
+              "RelativeDocumentMoniker": "authAPI\\Controllers\\InsertController.cs",
+              "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Controllers\\InsertController.cs",
+              "RelativeToolTip": "authAPI\\Controllers\\InsertController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T18:37:11.609Z"
+              "WhenOpened": "2025-10-02T20:47:43.172Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "IdentityExtensions.cs",
               "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Extensions\\IdentityExtensions.cs",
               "RelativeDocumentMoniker": "authAPI\\Extensions\\IdentityExtensions.cs",
               "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Extensions\\IdentityExtensions.cs",
               "RelativeToolTip": "authAPI\\Extensions\\IdentityExtensions.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAAGIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-21T18:37:11.61Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DSelectProducts.cs",
+              "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\DAL\\DataAccess\\DSelectProducts.cs",
+              "RelativeDocumentMoniker": "authAPI\\DAL\\DataAccess\\DSelectProducts.cs",
+              "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\DAL\\DataAccess\\DSelectProducts.cs",
+              "RelativeToolTip": "authAPI\\DAL\\DataAccess\\DSelectProducts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T13:16:37.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DInsertProduct.cs",
+              "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\DAL\\DataAccess\\DInsertProduct.cs",
+              "RelativeDocumentMoniker": "authAPI\\DAL\\DataAccess\\DInsertProduct.cs",
+              "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\DAL\\DataAccess\\DInsertProduct.cs",
+              "RelativeToolTip": "authAPI\\DAL\\DataAccess\\DInsertProduct.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAqwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T20:38:38.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ISelectProduct.cs",
+              "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\DAL\\Interfaces\\ISelectProduct.cs",
+              "RelativeDocumentMoniker": "authAPI\\DAL\\Interfaces\\ISelectProduct.cs",
+              "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\DAL\\Interfaces\\ISelectProduct.cs",
+              "RelativeToolTip": "authAPI\\DAL\\Interfaces\\ISelectProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T13:15:11.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InsertProduct.cs",
+              "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\BLL\\InsertProduct.cs",
+              "RelativeDocumentMoniker": "authAPI\\BLL\\InsertProduct.cs",
+              "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\BLL\\InsertProduct.cs",
+              "RelativeToolTip": "authAPI\\BLL\\InsertProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T20:39:30.744Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IInsertProduct.cs",
+              "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\DAL\\Interfaces\\IInsertProduct.cs",
+              "RelativeDocumentMoniker": "authAPI\\DAL\\Interfaces\\IInsertProduct.cs",
+              "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\DAL\\Interfaces\\IInsertProduct.cs",
+              "RelativeToolTip": "authAPI\\DAL\\Interfaces\\IInsertProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T20:38:46.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "commonProduct.cs",
+              "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\Common\\commonProduct.cs",
+              "RelativeDocumentMoniker": "authAPI\\Model\\Common\\commonProduct.cs",
+              "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\Common\\commonProduct.cs",
+              "RelativeToolTip": "authAPI\\Model\\Common\\commonProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T19:32:40.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AppDBContext.cs",
+              "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\AppDBContext.cs",
+              "RelativeDocumentMoniker": "authAPI\\Model\\AppDBContext.cs",
+              "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\AppDBContext.cs",
+              "RelativeToolTip": "authAPI\\Model\\AppDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T18:37:11.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CommonResult.cs",
+              "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\Common\\CommonResult.cs",
+              "RelativeDocumentMoniker": "authAPI\\Model\\Common\\CommonResult.cs",
+              "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\Common\\CommonResult.cs",
+              "RelativeToolTip": "authAPI\\Model\\Common\\CommonResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T20:42:11.37Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Program.cs",
+              "RelativeDocumentMoniker": "authAPI\\Program.cs",
+              "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Program.cs",
+              "RelativeToolTip": "authAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T18:37:11.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EFCoreExtensions.cs",
+              "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Extensions\\EFCoreExtensions.cs",
+              "RelativeDocumentMoniker": "authAPI\\Extensions\\EFCoreExtensions.cs",
+              "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Extensions\\EFCoreExtensions.cs",
+              "RelativeToolTip": "authAPI\\Extensions\\EFCoreExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T18:37:11.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserLogin.cs",
+              "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\UserLogin.cs",
+              "RelativeDocumentMoniker": "authAPI\\Model\\UserLogin.cs",
+              "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\UserLogin.cs",
+              "RelativeToolTip": "authAPI\\Model\\UserLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T18:50:36.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "UserRegistrationModel.cs",
               "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\UserRegistrationModel.cs",
               "RelativeDocumentMoniker": "authAPI\\Model\\UserRegistrationModel.cs",
@@ -112,43 +282,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
+              "Title": "AdministrationController.cs",
+              "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Controllers\\AdministrationController.cs",
+              "RelativeDocumentMoniker": "authAPI\\Controllers\\AdministrationController.cs",
+              "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Controllers\\AdministrationController.cs",
+              "RelativeToolTip": "authAPI\\Controllers\\AdministrationController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAADgvxMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T18:37:11.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "AppConfigExtensions.cs",
               "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Extensions\\AppConfigExtensions.cs",
               "RelativeDocumentMoniker": "authAPI\\Extensions\\AppConfigExtensions.cs",
               "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Extensions\\AppConfigExtensions.cs",
               "RelativeToolTip": "authAPI\\Extensions\\AppConfigExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-21T18:37:11.612Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "AddSwaggerExtensions.cs",
               "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Extensions\\AddSwaggerExtensions.cs",
               "RelativeDocumentMoniker": "authAPI\\Extensions\\AddSwaggerExtensions.cs",
               "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Extensions\\AddSwaggerExtensions.cs",
               "RelativeToolTip": "authAPI\\Extensions\\AddSwaggerExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-21T18:37:11.613Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 18,
               "Title": "AppUser.cs",
               "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\AppUser.cs",
               "RelativeDocumentMoniker": "authAPI\\Model\\AppUser.cs",
               "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\AppUser.cs",
               "RelativeToolTip": "authAPI\\Model\\AppUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-21T18:37:11.617Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 20,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\appsettings.json",
               "RelativeDocumentMoniker": "authAPI\\appsettings.json",
@@ -160,51 +342,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
               "Title": "AppSettings.cs",
               "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\AppSettings.cs",
               "RelativeDocumentMoniker": "authAPI\\Model\\AppSettings.cs",
               "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\AppSettings.cs",
               "RelativeToolTip": "authAPI\\Model\\AppSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-21T18:37:11.611Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EFCoreExtensions.cs",
-              "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Extensions\\EFCoreExtensions.cs",
-              "RelativeDocumentMoniker": "authAPI\\Extensions\\EFCoreExtensions.cs",
-              "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Extensions\\EFCoreExtensions.cs",
-              "RelativeToolTip": "authAPI\\Extensions\\EFCoreExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T18:37:11.614Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Program.cs",
-              "RelativeDocumentMoniker": "authAPI\\Program.cs",
-              "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Program.cs",
-              "RelativeToolTip": "authAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T18:37:11.584Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AppDBContext.cs",
-              "DocumentMoniker": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\AppDBContext.cs",
-              "RelativeDocumentMoniker": "authAPI\\Model\\AppDBContext.cs",
-              "ToolTip": "E:\\Development\\Angular-CoreApiAUTH\\AuthAPI\\authAPI\\Model\\AppDBContext.cs",
-              "RelativeToolTip": "authAPI\\Model\\AppDBContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T18:37:11.618Z"
             }
           ]
         }

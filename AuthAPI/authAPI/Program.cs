@@ -19,7 +19,8 @@ builder.Services.AddSwaggerExplorer()
                 .AddAppSettingsConfig(builder.Configuration)
                 .AddIdentityHandlerAndStores()
                 .configureIdentityOptions()
-                .AddIdentityAuth(builder.Configuration);
+                .AddIdentityAuth(builder.Configuration)
+                .AddBusinessEntities();
 
 var app = builder.Build();
 
