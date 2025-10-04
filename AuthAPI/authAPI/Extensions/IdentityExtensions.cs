@@ -86,13 +86,13 @@ namespace authAPI.Extensions
             return app;
         }
 
-        public static IServiceCollection AddBusinessEntities(this IServiceCollection services)
-        {
-            services.AddScoped<IInsertProduct, DInsertProduct>();
-            services.AddScoped<InsertProduct>();
-            services.AddScoped<ISelectProduct, DSelectProducts>();
+        //public static IServiceCollection AddBusinessEntities(this IServiceCollection services)
+        //{
+        //    services.AddScoped<IInsertProduct, DInsertProduct>();
+        //    services.AddScoped<InsertProduct>();
+        //    services.AddScoped<ISelectProduct, DSelectProducts>();
 
-            return services;
-        }
+        //    return services;
+        //}
     }
 }
