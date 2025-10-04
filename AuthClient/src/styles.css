@@ -304,3 +304,41 @@ body{
 .container-fluid {
   padding: 0 1rem;
 }
+
+/*============== Small toast styling =============*/
+.small-toast .p-toast {
+    width: 320px;
+    transform: scale(0.9);
+    transform-origin: bottom right;
+}
+
+.small-toast .p-toast-message {
+    margin: 0.25rem 0;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.small-toast .p-toast-message-content {
+    padding: 0;
+    align-items: flex-start;
+}
+
+.small-toast .p-toast-summary {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.small-toast .p-toast-detail {
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+}
+
+.small-toast .p-toast-icon-close {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* Style for individual toast messages with the custom class */
+.small-toast-message {
+    font-size: 0.8rem;
+}
