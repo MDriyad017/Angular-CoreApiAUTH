@@ -342,3 +342,37 @@ body{
 .small-toast-message {
     font-size: 0.8rem;
 }
+
+/* Button Hover */
+
+:root {
+    --custom-info-hover-gradient: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    --custom-info-hover-solid: #bbdefb;
+    
+    --custom-primary-hover-gradient: linear-gradient(135deg, #5481fac5 0%, #3a66e9ce 100%);
+    --custom-primary-hover-solid: #2a56d6;
+    
+    --custom-success-hover-gradient: linear-gradient(135deg, #8cfab1b0 0%, #66e791b9 100%);
+    --custom-success-hover-solid: #66ff99;
+}
+
+.btn-outline-info:hover {
+    background: var(--custom-info-hover-solid);
+    background: var(--custom-info-hover-gradient) !important;
+    border-color: var(--custom-info-hover-solid) !important;
+    color: #000 !important;
+}
+
+.btn-outline-primary:hover {
+    background: var(--custom-primary-hover-solid);
+    background: var(--custom-primary-hover-gradient) !important;
+    border-color: var(--custom-primary-hover-solid) !important;
+    color: #fff !important;
+}
+
+.btn-outline-success:hover {
+    background: var(--custom-success-hover-solid);
+    background: var(--custom-success-hover-gradient) !important;
+    border-color: var(--custom-success-hover-solid) !important;
+    color: #000 !important;
+}

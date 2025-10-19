@@ -19,7 +19,7 @@
                                     <label for="productCode" class="form-label fw-medium mb-0">Product Code:</label>
                                 </div>
                                 <div class="col-sm-8">
-                                    <input pInputText id="productCode" name="productCode" [(ngModel)]="productCode" #productCodeModel="ngModel" required minlength="3" placeholder="Enter product code" class="form-control w-full" [class]="hasError(productCodeModel) ? 'ng-invalid ng-dirty' : ''" />
+                                    <input id="productCode" name="productCode" [(ngModel)]="productCode" #productCodeModel="ngModel" required minlength="3" placeholder="Enter product code" class="form-control w-full" [class]="hasError(productCodeModel) ? 'ng-invalid ng-dirty' : ''" />
                                     @if (hasError(productCodeModel) && productCodeModel.errors?.['required']) {
                                         <small class="p-error block">Product code is required</small>
                                     }
@@ -34,7 +34,7 @@
                                     <label for="productName" class="form-label fw-medium mb-0">Product Name:</label>
                                 </div>
                                 <div class="col-sm-8">
-                                    <input pInputText id="productName" name="productName" [(ngModel)]="productName" #productNameModel="ngModel" required minlength="3" placeholder="Enter product name" class="form-control w-full" [class]="hasError(productNameModel) ? 'ng-invalid ng-dirty' : ''" />
+                                    <input id="productName" name="productName" [(ngModel)]="productName" #productNameModel="ngModel" required minlength="3" placeholder="Enter product name" class="form-control w-full" [class]="hasError(productNameModel) ? 'ng-invalid ng-dirty' : ''" />
                                     @if (hasError(productNameModel) && productNameModel.errors?.['required']) {
                                         <small class="p-error block">Product name is required</small>
                                     }
@@ -48,7 +48,9 @@
                             <!-- Submit Button -->
                             <div class="row">
                                 <div class="col-12 d-flex justify-content-end">
-                                    <button pButton type="submit" label="Add Product" class="p-button-success" [disabled]="isSubmitting || !form.valid" [loading]="isSubmitting"></button>
+                                    <button type="submit" class="btn btn-outline-success btn-sm" autofocus="true" [disabled]="isSubmitting || !form.valid" style="padding: 5px; border-radius: 4px;">
+                                        <i class="fa fa-save"></i>&nbsp;Add Product
+                                    </button>
                                 </div>
                             </div>
                         </form>
