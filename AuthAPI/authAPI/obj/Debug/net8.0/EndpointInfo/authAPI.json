@@ -79,6 +79,18 @@
         }
       }
     },
+    "/api/Administration/GetUserRoles": {
+      "get": {
+        "tags": [
+          "Administration"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Administration/GetUserList": {
       "get": {
         "tags": [

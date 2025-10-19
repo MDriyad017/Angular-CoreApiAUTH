@@ -53,6 +53,16 @@
   },
   {
     "ContainingType": "authAPI.Controllers.AdministrationController",
+    "Method": "GetUserRoles",
+    "RelativePath": "api/Administration/GetUserRoles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "authAPI.Controllers.AdministrationController",
     "Method": "ApplyMaternityLeave",
     "RelativePath": "api/Administration/MaternityLeave",
     "HttpMethod": "GET",

@@ -1,6 +1,6 @@
-﻿namespace authAPI.Model.Common
+﻿namespace authAPI.CommonModels
 {
-    public class CommonResult
+    public class CommonMessage
     {
         public bool IsSuccess { get; set; }
         public string Message { get; set; }

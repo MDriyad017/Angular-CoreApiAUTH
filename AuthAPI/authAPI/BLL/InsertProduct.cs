@@ -1,4 +1,5 @@
-﻿using authAPI.DAL.DataAccess;
+﻿using authAPI.CommonModels;
+using authAPI.DAL.DataAccess;
 using authAPI.DAL.Interfaces;
 using authAPI.Model.Common;
 using DAL.DataAccess;
@@ -18,7 +19,7 @@ namespace authAPI.BLL
             _selectProduct = selectProduct;
         }
 
-        public async Task<CommonResult> InsertProductFinally(commonProduct entity)
+        public async Task<CommonMessage> InsertProductFinally(commonProduct entity)
         {
             try
             {
@@ -28,7 +29,7 @@ namespace authAPI.BLL
 
                 if (exists)
                 {
-                    return new CommonResult()
+                    return new CommonMessage()
                     {
                         IsSuccess = false,
                         Message = "Duplicate Product Code"
@@ -37,7 +38,7 @@ namespace authAPI.BLL
 
                 var success = await _insertProduct.InsertProduct(entity);
 
-                return new CommonResult
+                return new CommonMessage
                 {
                     IsSuccess = success,
                     Message = success ? "Insert Successful." : "Insert Failed."
@@ -45,7 +46,7 @@ namespace authAPI.BLL
             }
             catch (Exception ex)
             {
-                return new CommonResult
+                return new CommonMessage
                 {
                     IsSuccess = false,
                     Message = $"Error: {ex.Message}"

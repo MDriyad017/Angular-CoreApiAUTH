@@ -22,4 +22,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DAL\Interfaces\Insert\" />
+    <Folder Include="DAL\Interfaces\Delete\" />
+    <Folder Include="DAL\Interfaces\Update\" />
+  </ItemGroup>
+
 </Project>
